@@ -141,7 +141,7 @@ section img#mountains_front {
   font-weight: bolder;
   white-space: nowrap;
   color: #fefefe;
-  
+
   font-size: 8vw;
   z-index: 9;
   margin-right: -300%;
@@ -180,27 +180,26 @@ footer#copyRight {
 }
 
 @media (max-width: 1680px) {
-  #text{
+  #text {
     transform: translateY(-400px);
   }
 }
 
 @media (max-width: 1024px) {
-  #text{
+  #text {
     font-size: 10vw;
     transform: translateY(-375px);
   }
 }
 @media (max-width: 450px) {
-  #text{
+  #text {
     font-size: 10vw;
     transform: translateY(-450px);
   }
 }
 
 @media (max-width: 650px) {
-  #text{
-    
+  #text {
     font-size: 15vw;
   }
 }

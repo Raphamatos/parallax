@@ -167,7 +167,7 @@ section::before{
 }
 .sec h2 {
   text-align: center;
-  font-size: 3.5em;
+  font-size: 5vw;
   font-family: "Pacifico", sans-serif;
   margin-bottom: 10px;
 }
@@ -194,7 +194,4 @@ footer#copyRight{
     transform: translateY(10px);
     
   }
-.sec h2{
-font-size: 2.5em;
-}
 }

@@ -12,6 +12,8 @@
   scroll-behavior: smooth;
 }
 :root {
+  --var-white-color: #fafafa;
+  --var-dark-color: #0e0e0e;
   --var-one-color: rgb(168, 38, 255);
   --var-two-color: rgb(140, 32, 212);
   --var-tree-color: #2b1055;
@@ -51,7 +53,7 @@ header {
   border: none;
   padding: 0px 20px;
   background-color: var(--var-one-color);
-  color: white;
+  color: var(--var-white-color);
   font-weight: bolder;
   cursor: pointer;
   border-radius: 10px;
@@ -61,12 +63,12 @@ header {
 
 .home {
   font-weight: bolder;
-  color: #fff;
+  color: var(--var-white-color);
   width: 11%;
   position: absolute;
   right: 0;
   margin-right: 20px;
-  fill: white;
+  fill: var(--var-white-color);
   transition-duration: 0.3s;
 }
 
@@ -86,7 +88,7 @@ header {
 .Btn:active {
   transform: translate(3px, 3px);
   transition-duration: 0.3s;
-  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+  box-shadow: 2px 2px 0px var(--var-one-color);
 }
 
 section {
@@ -131,8 +133,9 @@ section img#mountains_front {
   position: absolute;
   font-weight: bolder;
   white-space: nowrap;
-  color: #fefefe;
+  color: var(--var-white-color);
   font-size: 7.5vw;
+  
   z-index: 9;
   right: -100px;
 }
@@ -140,7 +143,7 @@ section img#mountains_front {
   display: inline-block;
   padding: 0.5em 1em;
   border-radius: 2em;
-  background: #fefefe;
+  background: var(--var-white-color);
   color: var(--var-tree-color);
   font-size: 1.4em;
   z-index: 9;
@@ -151,11 +154,10 @@ section img#mountains_front {
   position: relative;
   padding: 2rem 8%;
   background-color: var(--var-tree-color);
-  color: #fefefe;
+  color: var(--var-white-color);
   z-index: 1000;
-  
 }
-section::before{
+section::before {
   content: "";
   position: absolute;
   left: 0;
@@ -171,27 +173,25 @@ section::before{
   font-family: "Pacifico", sans-serif;
   margin-bottom: 10px;
 }
-.sec p{
+.sec p {
   font-size: 1.2em;
 }
 
-footer#copyRight{
-  background-color: #fafafa;
-  color: #0e0e0e;
+footer#copyRight {
+  background-color: var(--var-white-color);
+  color: var(--var-dark-color);
   font-size: 85%;
   width: 100%;
   font-style: none;
-  display: flex; 
+  display: flex;
   padding: 1rem 10%;
   justify-content: center;
   text-align: center;
 }
 
-@media (max-width: 500px)
-{
-  .section-btn{
+@media (max-width: 500px) {
+  .section-btn {
     font-size: 1rem;
     transform: translateY(10px);
-    
   }
 }

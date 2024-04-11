@@ -12,6 +12,8 @@
   scroll-behavior: smooth;
 }
 :root {
+  --var-white-color: #fafafa;
+  --var-dark-color: #0e0e0e;
   --var-one-color: rgb(168, 38, 255);
   --var-two-color: rgb(140, 32, 212);
   --var-tree-color: #2b1055;
@@ -55,7 +57,7 @@ header {
   border: none;
   padding: 0px 20px;
   background-color: var(--var-one-color);
-  color: white;
+  color: var(--var-white-color);
   font-weight: bolder;
   cursor: pointer;
   border-radius: 10px;
@@ -65,12 +67,12 @@ header {
 
 .home {
   font-weight: bolder;
-  color: #fff;
+  color: var(--var-white-color);
   width: 11%;
   position: absolute;
   right: 0;
   margin-right: 20px;
-  fill: white;
+  fill: var(--var-white-color);
   transition-duration: 0.3s;
 }
 
@@ -90,7 +92,7 @@ header {
 .Btn:active {
   transform: translate(3px, 3px);
   transition-duration: 0.3s;
-  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+  box-shadow: 2px 2px 0px var(--var-two-color);
 }
 
 section {
@@ -140,7 +142,7 @@ section img#mountains_front {
   position: absolute;
   font-weight: bolder;
   white-space: nowrap;
-  color: #fefefe;
+  color: var(--var-white-color);
 
   font-size: 8vw;
   z-index: 9;
@@ -159,7 +161,7 @@ section img#mountains_front {
   text-decoration: none;
   display: inline-block;
   padding: 8px 50px;
-  background: #fefefe;
+  background: var(--var-white-color);
   border-radius: 2.5rem;
   font-size: 1.4em;
   color: var(--var-tree-color);
@@ -168,8 +170,8 @@ section img#mountains_front {
 }
 
 footer#copyRight {
-  background-color: #fafafa;
-  color: #0e0e0e;
+  background-color: var(--var-white-color);
+  color: var(--var-dark-color);
   font-size: 85%;
   width: 100%;
   font-style: none;

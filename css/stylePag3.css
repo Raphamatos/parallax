@@ -12,6 +12,8 @@
   scroll-behavior: smooth;
 }
 :root {
+  --var-white-color: #fafafa;
+  --var-dark-color: #0e0e0e;
   --var-one-color: #fafafa2a;
   --var-two-color: #fafafa95;
   --var-tree-color: #0a2a43;
@@ -51,7 +53,7 @@ header {
   border: none;
   padding: 0px 20px;
   background-color: var(--var-one-color);
-  color: #fafafa;
+  color: var(--var-white-color);
   font-weight: bolder;
   cursor: pointer;
   border-radius: 10px;
@@ -84,12 +86,12 @@ header {
 .Btn:active {
   transform: translate(3px, 3px);
   transition-duration: 0.3s;
-  box-shadow: 2px 2px 0px #fafafa;
+  box-shadow: 2px 2px 0px var(--var-white-color);
 }
 
 footer#copyRight {
-  background-color: #fafafa;
-  color: #0e0e0e;
+  background-color: var(--var-white-color);
+  color: var(--var-dark-color);
   font-size: 85%;
   width: 100%;
   font-style: none;
@@ -124,7 +126,7 @@ section::after {
   z-index: 11;
   height: 100%;
   width: 100%;
-  background: #0a2a43;
+  background: var(--var-tree-color);
   mix-blend-mode: color;
 }
 section img {
@@ -141,7 +143,7 @@ section #text{
   position: relative;
 z-index: 2;
 font-size: 15vw;
-  color: #fafafa;
+  color: var(--var-white-color);
   font-family: 'Pacifico', cursive;
 }
 
@@ -154,7 +156,7 @@ font-size: 15vw;
   position: relative;
   padding: 2rem 8%;
   background-color: var(--var-tree-color);
-  color: #fefefe;
+  color: var(--var-white-color);
   z-index: 1000;
   
 }
